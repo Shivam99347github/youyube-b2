@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8b1c1c;
+}
+
+.container {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #1bd11b;
+}
+
+.form-input:focus {
+    background-color: #3a2d8d;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #741053;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.submit-button:hover {
+    opacity:1;
+}

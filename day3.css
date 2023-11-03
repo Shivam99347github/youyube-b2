@@ -1,0 +1,15 @@
+/* Apply a background image to a div */
+.image-container {
+    width: 300px;
+    height: 200px;
+    background-image: url('');
+    background-size: cover; /* Adjust to your preferred size */
+    background-position: center; /* Adjust to your preferred position */
+}
+
+/* Insert an image as a pseudo-element before a button */
+.icon-button::before {
+    content: url('');
+    display: inline-block; /* Allows the pseudo-element to be displayed */
+    margin-right: 8px; /* Adds spacing between the icon and button text */
+}

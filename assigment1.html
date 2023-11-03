@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Validation</title>
+</head>
+<body>
+    <h1>Email Validation</h1>
+    <form>
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" name="email">
+        <button type="button" onclick="validateEmail()">Validate Email</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function validateEmail() {
+            const emailInput = document.getElementById("email");
+            const resultElement = document.getElementById("result");
+
+            const email = emailInput.value;
+
+            // Check if the email is not empty
+            if (!email) {
+                resultElement.textContent = "Email cannot be empty.";
+                return;
+            }
+
+            // Use a regular expression to check the email format
+            const pattern = /^[a-zA-Z0-9._%+-]+@explorin\.io$/;
+            if (pattern.test(email)) {
+                resultElement.textContent = "Valid email address.";
+            } else {
+                resultElement.textContent = "Invalid email address. Please use the format name@explorin.io.";
+            }
+        }
+    </script>
+</body>
+</html>
